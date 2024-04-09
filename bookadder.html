@@ -1,0 +1,47 @@
+<html>
+     
+<head>
+    <link rel="stylesheet" href="C:/xampp/htdocs/php/html/bootstrap/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0096efe0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   
+   <div class="container">
+    <h1 class="display-4 text-center"><i class="fas fa-book-open text-primary"></i>
+       
+        My <span class="text-primary ">Book</span>Shop
+    </h1>
+    <form action="" id="book-form">
+        <div class="form-group">
+            <label for="title">title</label>
+            <input type="text" class="form-control" id="title">
+        </div>
+        <div class="form-group">
+            <label for="author">author</label>
+            <input type="text" class="form-control" id="author">
+        </div>
+        <div class="form-group">
+            <label for="isbn">ISBN#</label>
+            <input type="text" class="form-control" id="isbn">
+          
+        </div>
+        <input type="submit" class="btn btn-primary btn-block" value="Add book">
+       
+    </form>
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>author</th>
+                <th>ISBn#</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+    </table>
+   </div>
+     <script src="app.js"></script>
+</body>
+</html>
